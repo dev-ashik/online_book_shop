@@ -44,6 +44,10 @@ html::-webkit-scrollbar-thumb {
 
 /* common styles */
 
+section {
+    padding:5rem 9% ;
+}
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -266,6 +270,53 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+/* home */
+.home {
+    background: url(./image/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.home .row .content {
+    flex: 1 1 45rem;
+}
+
+.home .row .book-slider {
+    flex: 1 1 45rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .book-slider a img {
+    height: 25rem;
+}
+
+.home .row .book-slider a:hover img {
+    transform: scale(.9);
+}
+
+.home .row .book-slider .stand {
+    width: 100%;
+}
+
+.home .row .content h3 {
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
 
 
@@ -283,6 +334,10 @@ html::-webkit-scrollbar-thumb {
 
     .header .header-1 {
         padding: 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem ;
     }
 }
 
@@ -322,6 +377,14 @@ html::-webkit-scrollbar-thumb {
 
     .header .header-1 .search-form.active {
         top: 115%;
+    }
+
+    .home .row .content {
+        text-align: center;
+    }
+    
+    .home .row .content h3 {
+        font-size: 3.5rem;
     }
 }
 

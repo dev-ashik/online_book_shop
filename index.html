@@ -1,96 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>book shop</title>
     <!-- using font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body>
     <!-- header section start -->
     <header class="header">
-        <div class="header-1">
-            <a href="#" class="logo"><i class="fa-solid fa-book"></i> bookly</a>
+      <div class="header-1">
+        <a href="#" class="logo"><i class="fa-solid fa-book"></i> bookly</a>
 
-            <form action="" class="search-form">
-                <input type="search" placeholder="search here..." id="searc-box">
-                <label for="searh-box"><i class="fa-solid fa-magnifying-glass"></i></label>
-            </form>
+        <form action="" class="search-form">
+          <input type="search" placeholder="search here..." id="searc-box" />
+          <label for="searh-box"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+        </form>
 
-            <div class="icons">
-                <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
-                <a href="" class="fa-solid fa-heart"></a>
-                <a href="" class="fa-solid fa-cart-plus"></a>
-                <div class="fa-solid fa-user" id="login-btn"></div>
-            </div>
+        <div class="icons">
+          <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+          <a href="" class="fa-solid fa-heart"></a>
+          <a href="" class="fa-solid fa-cart-plus"></a>
+          <div class="fa-solid fa-user" id="login-btn"></div>
         </div>
+      </div>
 
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#featured">featured</a>
-                <a href="#arrivals">arrivals</a>
-                <a href="#reviews">reviews</a>
-                <a href="#blogs">blogs</a>
-            </nav>
-        </div>
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#featured">featured</a>
+          <a href="#arrivals">arrivals</a>
+          <a href="#reviews">reviews</a>
+          <a href="#blogs">blogs</a>
+        </nav>
+      </div>
     </header>
     <!-- header section end -->
 
     <!-- bottom navbar -->
     <nav class="bottom-navbar">
-        <a href="#home" class="fa-solid fa-house"></a>
-        <a href="#featured" class="fa-solid fa-list"></a>
-        <a href="#arrivals" class="fa-solid fa-tag"></a>
-        <a href="#reviews" class="fa-solid fa-comment"></a>
-        <a href="#blogs" class="fa-solid fa-blog"></a>
+      <a href="#home" class="fa-solid fa-house"></a>
+      <a href="#featured" class="fa-solid fa-list"></a>
+      <a href="#arrivals" class="fa-solid fa-tag"></a>
+      <a href="#reviews" class="fa-solid fa-comment"></a>
+      <a href="#blogs" class="fa-solid fa-blog"></a>
     </nav>
 
     <!-- login form -->
 
     <div class="login-form-container">
-        <i class="fa-solid fa-xmark" id="close-login-btn"></i>
-        <form action="">
-            <h3>sign in</h3>
-            <span>username</span>
-            <input type="email" class="box" placeholder="enter your email" id="">
-            <span>password</span>
-            <input type="password" class="box" placeholder="enter your password" id="">
-            <div class="checkbox">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me"> remember me</label>
-            </div>
-            <input type="submit" value="sign in" class="btn">
-            <p>forget password ? <a href="#">click here</a></p>
-            <p>don't have an account ? <a href="#">create one</a></p>
-        </form>
+      <i class="fa-solid fa-xmark" id="close-login-btn"></i>
+      <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" class="box" placeholder="enter your email" id="" />
+        <span>password</span>
+        <input
+          type="password"
+          class="box"
+          placeholder="enter your password"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+      </form>
     </div>
-
 
     <!-- home section start -->
     <section class="home" id="home">
-        <div class="row">
-            <div class="content">
-                <h3>upto 75% off</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, eum repellat nostrum unde odit sequi? Sequi nihil accusantium nam eos.</p>
-                <a href="#" class="btn">shop now</a>
-            </div>
-
-            <div class="book-slider">
-                
-            </div>
+      <div class="row">
+        <div class="content">
+          <h3>upto 75% off</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, eum
+            repellat nostrum unde odit sequi? Sequi nihil accusantium nam eos.
+          </p>
+          <a href="#" class="btn">shop now</a>
         </div>
+
+        <div class="swiper book-slider">
+          <div class="swiper-wrapper">
+            <a href="" class="swiper-slide"
+              ><img src="./image/book-1.png" alt=""
+            /></a>
+            <a href="" class="swiper-slide"
+              ><img src="./image/book-2.png" alt=""
+            /></a>
+            <a href="" class="swiper-slide"
+              ><img src="./image/book-3.png" alt=""
+            /></a>
+            <a href="" class="swiper-slide"
+              ><img src="./image/book-4.png" alt=""
+            /></a>
+            <a href="" class="swiper-slide"
+              ><img src="./image/book-5.png" alt=""
+            /></a>
+            <a href="" class="swiper-slide"
+              ><img src="./image/book-6.png" alt=""
+            /></a>
+          </div>
+          <img class="stand" src="./image/stand.png" alt="" />
+        </div>
+      </div>
     </section>
     <!-- home section end -->
 
 
 
+
+
+
+
+
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <!-- custom js link -->
     <script src="./app.js"></script>
-</body>
+
+  </body>
+  <!-- ! Timg : 31: 16 -->
 </html>
