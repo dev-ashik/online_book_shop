@@ -14,7 +14,20 @@ window.onload = () => {
   } else {
     document.querySelector(".header .header-2").classList.remove("active");
   }
+
+  fadeOut();
 };
+
+
+// loader
+
+const loaderImg = document.querySelector(".loader-container");
+const loader = () => {
+  loaderImg.classList.add('active');
+}
+const fadeOut = () => {
+  setTimeout(loader, 4000);
+}
 
 // search box
 
@@ -134,4 +147,29 @@ var swiper = new Swiper(".reviews-slider", {
     },
   },
 });
+
+// swiper blog-slider
+var swiper = new Swiper(".blog-slider", {
+  spaceBetween: 10,
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+
 
